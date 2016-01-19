@@ -175,7 +175,7 @@ Here you can see two anchor elements, both with multiple class attribute values.
 Using multiple classes, we can layer on as many styles as we wish, keeping our code lean and our specificity weights low. Much like understanding the cascade and calculating specificity, this is a practice that will take time to fully absorb, but we’ll get better with each lesson.
 
 
-## Excersize
+## Exersize
 
 Go to this codepen - http://codepen.io/saki007ster/pen/PZOJzy
 You will get HTML already done for that you need to theme that html as per following design. 
