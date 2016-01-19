@@ -49,7 +49,7 @@ div {
 
 Knowing how elements are displayed and how to change their display is fairly important, as the display of an element has implications on how the box model is rendered. As we discuss the box model, we’ll be sure to look at these different implications and how they can affect the presentation of an element.
 
-What Is the Box Model?
+###What Is the Box Model?
 According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
 
 That’s worth repeating: Every element on a page is a rectangular box.
@@ -66,14 +66,7 @@ Each part of the box model corresponds to a CSS property: width, height, padding
 
 Let’s look these properties inside some code:
 
-1
-2
-3
-4
-5
-6
-7
-8
+```
 div {
   border: 6px solid #949599;
   height: 100px;
@@ -81,6 +74,8 @@ div {
   padding: 20px;
   width: 400px;
 }
+```
+
 According to the box model, the total width of an element can be calculated using the following formula:
 
 1
@@ -273,10 +268,10 @@ When considering the order in which multiple values are applied to the border-ra
 div {
   border-radius: 5px;
 }
-Border Radius Demo
 
 
-￼The border-radius property may also be broken out into longhand properties that allow us to change the radii of individual corners of an element. These longhand properties begin with border, continue with the corner’s vertical location (top or bottom) and the corner’s horizontal location (left or right), and then end with radius. For example, to change the top-right corner radius of a <div>, the border-top-right-radius property can be used.
+
+The border-radius property may also be broken out into longhand properties that allow us to change the radii of individual corners of an element. These longhand properties begin with border, continue with the corner’s vertical location (top or bottom) and the corner’s horizontal location (left or right), and then end with radius. For example, to change the top-right corner radius of a <div>, the border-top-right-radius property can be used.
 
 1
 2
