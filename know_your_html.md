@@ -1,8 +1,8 @@
+## Lesson 2
 # Know your HTML
 
+
 ## HTML
-
-
 With our introduction to HTML and CSS complete, it’s time to dig a little deeper into HTML and examine the different components that make up this language.
 
 In order to start building websites, we need to learn a little about which HTML elements are best used to display different types of content. It’s also important to understand how elements are visually displayed on a web page, as well as what different elements mean semantically.
@@ -197,7 +197,7 @@ We may instinctively think of an **aside** element as an element that appears of
 
 ### Footer
 
-The <footer> element identifies the closing or end of a page, article, section, or other segment of a page. Generally the <footer> element is found at the bottom of its parent. Content within the <footer> element should be relative information and should not diverge from the document or section it is included within.
+The **footer** element identifies the closing or end of a page, article, section, or other segment of a page. Generally the **footer** element is found at the bottom of its parent. Content within the **footer** element should be relative information and should not diverge from the document or section it is included within.
 
 ```
 <footer>...</footer>
