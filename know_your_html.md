@@ -112,6 +112,7 @@ The **em** element is used semantically to place a stressed emphasis on text; it
 
 Here’s the HTML code for italicizing:
 
+
 ```
 <!-- Stressed emphasis -->
 <p>I <em>love</em> Chicago!</p>
@@ -124,86 +125,88 @@ Here’s the HTML code for italicizing:
 
 These text-level elements are quite handy for bringing our content to life. In addition to these, there are structurally based elements. Whereas text-based elements identify headings and paragraphs, structural elements identify groupings of content such as headers, articles, footers, and so forth. Let’s take a look.
 
-Building Structure
-For the longest time the structure of a web page was built using divisions. The problem was that divisions provide no semantic value, and it was fairly difficult to determine the intention of these divisions. Fortunately HTML5 introduced new structurally based elements, including the <header>, <nav>, <article>, <section>, <aside>, and <footer> elements.
+### Building Structure
+For the longest time the structure of a web page was built using divisions. The problem was that divisions provide no semantic value, and it was fairly difficult to determine the intention of these divisions. Fortunately HTML5 introduced new structurally based elements, including the **header**, **nav**, **article**, **section**, **aside**, and **footer** elements.
 
 All of these new elements are intended to give meaning to the organization of our pages and improve our structural semantics. They are all block-level elements and do not have any implied position or style. Additionally, all of these elements may be used multiple times per page, so long as each use reflects the proper semantic meaning.
 
 Let’s roll up our sleeves and take a closer look.
 
 Building Structure
-Fig 2
-One possible example of HTML5 structural elements giving meaning to the organization of our pages
-Header
+![One possible example of HTML5 structural elements giving meaning to the organization of our pages](http://learn.shayhowe.com/assets/images/courses/html-css/getting-to-know-html/building-structure.png)
 
-The <header> element, like it sounds, is used to identify the top of a page, article, section, or other segment of a page. In general, the <header> element may include a heading, introductory text, and even navigation.
 
-1
-2
+###Header
+
+The **header** element, like it sounds, is used to identify the top of a page, article, section, or other segment of a page. In general, the **header** element may include a heading, introductory text, and even navigation.
+
+```
 <header>...</header>
-<header> vs. <head> vs. <h1> through <h6> Elements
+```
 
-It is easy to confuse the <header> element with the <head> element or the heading elements, <h1> through <h6>. They all have different semantic meanings and should be used according to their meanings. For reference…
-
-The <header> element is a structural element that outlines the heading of a segment of a page. It falls within the <body> element.
-
-The <head> element is not displayed on a page and is used to outline metadata, including the document title, and links to external files. It falls directly within the <html> element.
-
-Heading elements, <h1> through <h6>, are used to designate multiple levels of text headings throughout a page.
-
-Navigation
-
+###Navigation
 The <nav> element identifies a section of major navigational links on a page. The <nav> element should be reserved for primary navigation sections only, such as global navigation, a table of contents, previous/next links, or other noteworthy groups of navigational links.
 
 Most commonly, links included within the <nav> element will link to other pages within the same website or to parts of the same web page. Miscellaneous one-off links should not be wrapped within the <nav> element; they should use the anchor element, <a>, and the anchor element alone.
 
-1
-2
+```
 <nav>...</nav>
-Article
+```
+
+### Article
 
 The <article> element is used to identify a section of independent, self-contained content that may be independently distributed or reused. We’ll often use the <article> element to mark up blog posts, newspaper articles, user-submitted content, and the like.
 
 When deciding whether to use the <article> element, we must determine if the content within the element could be replicated elsewhere without any confusion. If the content within the <article> element were removed from the context of the page and placed, for example, within an email or printed work, that content should still make sense.
 
-1
-2
+```
 <article>...</article>
-Section
+```
+
+### Section
 
 The <section> element is used to identify a thematic grouping of content, which generally, but not always, includes a heading. The grouping of content within the <section> element may be generic in nature, but it’s useful to identify all of the content as related.
 
 The <section> element is commonly used to break up and provide hierarchy to a page.
 
-1
-2
+```
 <section>...</section>
-Deciding Between <article>, <section>, or <div> Elements
+```
 
-At times it becomes fairly difficult to decide which element—<article>, <section>, or <div>—is the best element for the job based on its semantic meaning. The trick here, as with every semantic decision, is to look at the content.
 
-Both the <article> and <section> elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the <div> element.
+#### Deciding Between **article**, **section**, or **div** Elements
+At times it becomes fairly difficult to decide which element—**article**, **section**, or **div**—is the best element for the job based on its semantic meaning. The trick here, as with every semantic decision, is to look at the content.
 
-If the content adds to the document outline and it can be independently redistributed or syndicated, use the <article> element.
+Both the **article** and **section** elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the **div** element.
 
-If the content adds to the document outline and represents a thematic group of content, use the <section> element.
+If the content adds to the document outline and it can be independently redistributed or syndicated, use the **article** element.
 
-Aside
+If the content adds to the document outline and represents a thematic group of content, use the **section** element.
 
-The <aside> element holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. When used within an <article> element, for example, the <aside> element may identify content related to the author of the article.
 
-We may instinctively think of an <aside> element as an element that appears off to the left or right side of a page. We have to remember, though, that all of the structural elements, including the <aside> element, are block-level elements and as such will appear on a new line, occupying the full available width of the page or of the element they are nested within, also known as their parent element.
+### Aside
+The **aside** element holds content, such as sidebars, inserts, or brief explanations, that is tangentially related to the content surrounding it. When used within an **article** element, for example, the **aside** element may identify content related to the author of the article.
 
-1
-2
+We may instinctively think of an **aside** element as an element that appears off to the left or right side of a page. We have to remember, though, that all of the structural elements, including the **aside** element, are block-level elements and as such will appear on a new line, occupying the full available width of the page or of the element they are nested within, also known as their parent element.
+
+```
 <aside>...</aside>
-We’ll discuss how to change the position of an element, perhaps placing it to the right or left of a group of content, in Lesson 5, “Positioning Content.”
+```
 
-Footer
+
+
+### Footer
 
 The <footer> element identifies the closing or end of a page, article, section, or other segment of a page. Generally the <footer> element is found at the bottom of its parent. Content within the <footer> element should be relative information and should not diverge from the document or section it is included within.
 
-1
-2
+```
 <footer>...</footer>
-With structural elements and text-based elements under our belts, our HTML knowledge is really starting to come together. Now is a good time to revisit our Styles Conference website and see if we can provide it with a little better structure.
+```
+
+With structural elements and text-based elements under our belts, our HTML knowledge is really starting to come together, hopefully :)
+
+## Exercise
+
+Create your html corresponding  to this design. Make use of maximum html5 tags.
+![](layout-excersize.png)
+
