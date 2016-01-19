@@ -9,7 +9,6 @@ Within this book I’m going to show you how to build your own websites using th
 
 Before we begin our journey to learn how to build websites with HTML and CSS, it is important to understand the differences between the two languages, the syntax of each language, and some common terminology.
 
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
 ### What Are HTML & CSS?
 HTML, HyperText Markup Language, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images. CSS, or Cascading Style Sheets, is a presentation language created to style the appearance of content—using, for example, fonts or colors.
 
@@ -245,5 +244,5 @@ To recap, so far we’ve covered the following:
 Create a html doument with a single heading saying "QED42 Internship". Use a nice background and center align the heading in between of the page. You need to use -
 
 - Reset css
-- reference your css from style.css file.
-- valiadte your html from w3c
+- Reference your css from style.css file.
+- Valiadte your html from w3c
