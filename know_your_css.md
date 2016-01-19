@@ -177,5 +177,8 @@ Using multiple classes, we can layer on as many styles as we wish, keeping our c
 
 ## Excersize
 
+Go to this codepen - http://codepen.io/saki007ster/pen/PZOJzy
+You will get HTML already done for that you need to theme that html as per following design. 
+![Lesson-css](lesson-3.png)
 
 
