@@ -17,31 +17,23 @@ Moving forward, as new elements are introduced, we’ll talk about what those el
 ### Identifying Divisions & Spans
 Divisions, or **div**s, and **span**s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value. Paragraphs are semantic in that content wrapped within a **p** element is known and understood as a paragraph. **div**s and **span**s do not hold any such meaning and are simply containers.
 
-Block vs. Inline Elements
 
+### Block vs. Inline Elements
 Most elements are either block- or inline-level elements. What’s the difference?
 
 Block-level elements begin on a new line, stacking one on top of the other, and occupy any available width. Block-level elements may be nested inside one another and may wrap inline-level elements. We’ll most commonly see block-level elements used for larger pieces of content, such as paragraphs.
 
 Inline-level elements do not begin on a new line. They fall into the normal flow of a document, lining up one after the other, and only maintain the width of their content. Inline-level elements may be nested inside one another; however, they cannot wrap block-level elements. We’ll usually see inline-level elements with smaller pieces of content, such as a few words.
 
-Both <div>s and <span>s, however, are extremely valuable when building a website in that they give us the ability to apply targeted styles to a contained set of content.
+Both **div**s and **span**s, however, are extremely valuable when building a website in that they give us the ability to apply targeted styles to a contained set of content.
 
-A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. A <span>, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.
+A **div** is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. A **span**, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.
 
-We’ll commonly see <div>s and <span>s with class or id attributes for styling purposes. Choosing a class or id attribute value, or name, requires a bit of care. We want to choose a value that refers to the content of an element, not necessarily the appearance of an element.
+We’ll commonly see **div**s and **span**s with class or id attributes for styling purposes. Choosing a class or id attribute value, or name, requires a bit of care. We want to choose a value that refers to the content of an element, not necessarily the appearance of an element.
 
-For example, if we have a <div> with an orange background that contains social media links, our first thought might be to give the <div> a class value of orange. What happens if that orange background is later changed to blue? Having a class value of orange no longer makes sense. A more sensible choice for a class value would be social, as it pertains to the contents of the <div>, not the style.
+For example, if we have a **div** with an orange background that contains social media links, our first thought might be to give the **div** a class value of orange. What happens if that orange background is later changed to blue? Having a class value of orange no longer makes sense. A more sensible choice for a class value would be social, as it pertains to the contents of the **div**, not the style.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
+```
 <!-- Division -->
 <div class="social">
   <p>I may be found on...</p>
@@ -50,6 +42,8 @@ For example, if we have a <div> with an orange background that contains social m
 
 <!-- Span -->
 <p>Soon we'll be <span class="tooltip">writing HTML</span> with the best of them.</p>
+```
+
 Comments within HTML & CSS
 
 The previous code includes exclamation points within the HTML, and that’s all right. Those are not elements, those are comments.
