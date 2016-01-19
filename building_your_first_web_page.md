@@ -99,7 +99,7 @@ In addition to HTML terms, there are a few common CSS terms you will want to fam
 ####Selectors
 As elements are added to a web page, they may be styled using CSS. A selector designates exactly which element or elements within our HTML to target and apply styles (such as color, size, and position) to. Selectors may include a combination of different qualifiers to select unique elements, all depending on how specific we wish to be. For example, we may want to select every paragraph on a page, or we may want to select only one specific paragraph on a page.
 
-Selectors generally target an attribute value, such as an id or class value, or target the type of element, such as <h1\> or <p\>.
+Selectors generally target an attribute value, such as an id or class value, or target the type of element, such as **h1** tag or **p** tag
 
 Within CSS, selectors are followed with curly brackets, {}, which encompass the styles to be applied to the selected element. The selector here is targeting all <p\> elements.
 
@@ -243,7 +243,7 @@ To recap, so far we’ve covered the following:
 
 ## Exercise
 
-Create a html doument with a single heading saying "QED42 Internship". Use a nice background and center align the heading in between of the page. You need to use -
+Create a HTML document with a single heading saying "QED42 Internship". Use a nice background and center align the heading in between of the page. You need to use -
 
 - Reset css
 - reference your css from style.css file.
