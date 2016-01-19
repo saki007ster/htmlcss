@@ -80,16 +80,18 @@ When an element is placed inside of another element, also known as nested, it is
 #### Self-Closing Elements
 In the previous example, the <meta> element had only one tag and didn’t include a closing tag. Fear not, this was intentional. Not all elements consist of opening and closing tags. Some elements simply receive their content or behavior from attributes within a single tag. The <meta> element is one of these elements. The content of the previous <meta> element is assigned with the use of the charset attribute and value. Other common selfclosing elements include
 
-- <br\> 
-- <embed\> 
-- <hr\> 
-- <img\> 
-- <input\> 
-- <link\> 
-- <meta\> 
-- <param\> 
-- <source\> 
-- <wbr\>
+```
+<br\> 
+<embed\> 
+<hr\> 
+<img\> 
+<input\> 
+<link\> 
+<meta\> 
+<param\> 
+<source\> 
+<wbr\>
+```
 
 ###Understanding Common CSS Terms
 In addition to HTML terms, there are a few common CSS terms you will want to familiarize yourself with. These terms include selectors, properties, and values. As with the HTML terminology, the more you work with CSS, the more these terms will become second nature.
