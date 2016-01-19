@@ -179,6 +179,7 @@ Using multiple classes, we can layer on as many styles as we wish, keeping our c
 
 Go to this codepen - http://codepen.io/saki007ster/pen/PZOJzy
 You will get HTML already done for that you need to theme that html as per following design. 
+
+Note:- If you don't get images you can use some elegant color similar to it or different images from google. Also you have full liberty on fonts.
+
 ![Lesson-css](lesson-3.png)
-
-
