@@ -44,8 +44,8 @@ For example, if we have a **div** with an orange background that contains social
 <p>Soon we'll be <span class="tooltip">writing HTML</span> with the best of them.</p>
 ```
 
-Comments within HTML & CSS
 
+###Comments within HTML & CSS
 The previous code includes exclamation points within the HTML, and that’s all right. Those are not elements, those are comments.
 
 HTML and CSS give us the ability to leave comments within our code, and any content wrapped within a comment will not be displayed on the web page. Comments help keep our files organized, allow us to set reminders, and provide a way for us to more effectively manage our code. Comments become especially useful when there are multiple people working on the same files.
@@ -55,88 +55,71 @@ HTML comments start with <!-- and end with -->. CSS comments start with /* and e
 Using Text-Based Elements
 Many different forms of media and content exist online; however, text is predominant. Accordingly, there are a number of different elements for displaying text on a web page. For now we’ll focus on the more popular elements, including headings, paragraphs, bold text to show importance, and italics for emphasis. Later, within Lesson 6, “Working with Typography,” we’ll take a closer look at how to style text.
 
-Headings
 
-Headings are block-level elements, and they come in six different rankings, <h1> through <h6>. Headings help to quickly break up content and establish hierarchy, and they are key identifiers for users reading a page. They also help search engines to index and determine the content on a page.
+### Headings
+Headings are block-level elements, and they come in six different rankings, **h1** through **h6**. Headings help to quickly break up content and establish hierarchy, and they are key identifiers for users reading a page. They also help search engines to index and determine the content on a page.
 
-Headings should be used in an order that is relevant to the content of a page. The primary heading of a page or section should be marked up with an <h1> element, and subsequent headings should use <h2>, <h3>, <h4>, <h5>, and <h6> elements as necessary.
+Headings should be used in an order that is relevant to the content of a page. The primary heading of a page or section should be marked up with an **h1** element, and subsequent headings should use **h2, h3, h4, h5,** and **h6** elements as necessary.
 
 Each heading level should be used where it is semantically valued, and should not be used to make text bold or big—there are other, better ways to do that.
 
 Here is an example of HTML for all the different heading levels and the resulting display on a web page.
 
-1
-2
-3
-4
-5
-6
-7
+```
 <h1>Heading Level 1</h1>
 <h2>Heading Level 2</h2>
 <h3>Heading Level 3</h3>
 <h4>Heading Level 4</h4>
 <h5>Heading Level 5</h5>
 <h6>Heading Level 6</h6>
-Headings Demo
+```
 
 
-Paragraphs
 
-Headings are often followed by supporting paragraphs. Paragraphs are defined using the <p> block-level element. Paragraphs can appear one after the other, adding information to a page as desired. Here is example of how to set up paragraphs.
+### Paragraphs
+Headings are often followed by supporting paragraphs. Paragraphs are defined using the **p** block-level element. Paragraphs can appear one after the other, adding information to a page as desired. Here is example of how to set up paragraphs.
 
-1
-2
-3
-4
-<p>Steve Jobs was a co-founder and longtime chief executive officer at Apple. On June 12, 2005, Steve gave the commencement address at Stanford University.</p>
+```
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora est ratione doloremque odit esse eveniet. Itaque voluptatem quisquam non incidunt ea molestiae alias numquam vel, libero explicabo neque fuga, omnis!</p>
 
-<p>In his address Steve urged graduates to follow their dreams and, despite any setbacks, to never give up&ndash;advice which he sincerely took to heart.</p>
-Paragraphs Demo
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora est ratione doloremque odit esse eveniet. Itaque voluptatem quisquam non incidunt ea molestiae alias numquam vel, libero explicabo neque fuga, omnis!</p>
+```
 
 
-Bold Text with Strong
 
-To make text bold and place a strong importance on it, we’ll use the <strong> inline-level element. There are two elements that will bold text for us: the <strong> and <b> elements. It is important to understand the semantic difference between the two.
+### Bold Text with Strong
 
-The <strong> element is semantically used to give strong importance to text, and is thus the most popular option for bolding text. The <b> element, on the other hand, semantically means to stylistically offset text, which isn’t always the best choice for text deserving prominent attention. We have to gauge the significance of the text we wish to set as bold and to choose an element accordingly.
+To make text bold and place a strong importance on it, we’ll use the **strong** inline-level element. There are two elements that will bold text for us: the **strong** and **b** elements. It is important to understand the semantic difference between the two.
+
+The **strong** element is semantically used to give strong importance to text, and is thus the most popular option for bolding text. The **b** element, on the other hand, semantically means to stylistically offset text, which isn’t always the best choice for text deserving prominent attention. We have to gauge the significance of the text we wish to set as bold and to choose an element accordingly.
 
 Here are the two HTML options for creating bold text in action:
 
-1
-2
-3
-4
-5
-6
+```
 <!-- Strong importance -->
 <p><strong>Caution:</strong> Falling rocks.</p>
 
 <!-- Stylistically offset -->
 <p>This recipe calls for <b>bacon</b> and <b>baconnaise</b>.</p>
 Bold Text with Strong Demo
+```
 
 
-Italicize Text with Emphasis
+### Italicize Text with Emphasis
+To italicize text, thereby placing emphasis on it, we’ll use the **em** inline-level element. As with the elements for bold text, there are two different elements that will italicize text, each with a slightly different semantic meaning.
 
-To italicize text, thereby placing emphasis on it, we’ll use the <em> inline-level element. As with the elements for bold text, there are two different elements that will italicize text, each with a slightly different semantic meaning.
-
-The <em> element is used semantically to place a stressed emphasis on text; it is thus the most popular option for italicizing text. The other option, the <i> element, is used semantically to convey text in an alternative voice or tone, almost as if it were placed in quotation marks. Again, we will need to gauge the significance of the text we want to italicize and choose an element accordingly.
+The **em** element is used semantically to place a stressed emphasis on text; it is thus the most popular option for italicizing text. The other option, the **i** element, is used semantically to convey text in an alternative voice or tone, almost as if it were placed in quotation marks. Again, we will need to gauge the significance of the text we want to italicize and choose an element accordingly.
 
 Here’s the HTML code for italicizing:
 
-1
-2
-3
-4
-5
-6
+```
 <!-- Stressed emphasis -->
 <p>I <em>love</em> Chicago!</p>
 
 <!-- Alternative voice or tone -->
 <p>The name <i>Shay</i> means a gift.</p>
-Italicize Text with Emphasis Demo
+```
+
 
 
 These text-level elements are quite handy for bringing our content to life. In addition to these, there are structurally based elements. Whereas text-based elements identify headings and paragraphs, structural elements identify groupings of content such as headers, articles, footers, and so forth. Let’s take a look.
