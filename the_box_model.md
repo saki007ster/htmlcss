@@ -334,3 +334,9 @@ Generally speaking, the best box-sizing value to use is border-box. The border-b
 Additionally, we can easily mix length values. Say we want our box to be 40% wide. Adding a padding of 20 pixels and a border of 10 pixels around every side of an element isn’t difficult, and we can still guarantee that the actual width of our box will remain 40% despite using pixel values elsewhere.
 
 The only drawback to using the box-sizing property is that as part of the CSS3 specification, it isn’t supported in every browser; it especially lacks support in older browsers. Fortunately this is becoming less and less relevant as new browsers are released. Chances are we’re safe to use the box-sizing property, but should we notice any issues, it’s worth looking into which browser those issues are occurring with.
+
+
+## Exercise
+
+Here is a Codepen http://codepen.io/chriscoyier/pen/ClGcF
+you need to fix the layout of the boxes here.
