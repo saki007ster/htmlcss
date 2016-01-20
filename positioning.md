@@ -1,11 +1,12 @@
 ## Lesson 5
+
 # Positioning
 
 One of the best things about CSS is that it gives us the ability to position content and elements on a page in nearly any imaginable way, bringing structure to our designs and helping make content more digestible.
 
 There are a few different types of positioning within CSS, and each has its own application. In this chapter we’re going to take a look at a few different use cases—creating reusable layouts and uniquely positioning one-off elements—and describe a few ways to go about each.
 
-Positioning with Floats
+### Positioning with Floats
 One way to position elements on a page is with the float property. The float property is pretty versatile and can be used in a number of different ways.
 
 Essentially, the float property allows us to take an element, remove it from the normal flow of a page, and position it to the left or right of its parent element. All other elements on the page will then flow around the floated element. An **img** element floated to the side of a few paragraphs of text, for example, will allow the paragraphs to wrap around the image as necessary.
@@ -134,7 +135,7 @@ footer {
 ```
 
 
-#### Layout with Cleared Floats Demo
+### Layout with Cleared Floats Demo
 
 
 #### Containing Floats
@@ -204,6 +205,7 @@ aside {
 ```
 
 ### Layout with Contained Floats Demo
+
 The technique shown here for containing elements is know as a “clearfix” and can often be found in other websites with the class name of clearfix or cf. We’ve chosen to use the class name of group, though, as it is representing a group of elements, and better expresses the content.
 
 As elements are floated, it is important to keep note of how they affect the flow of a page and to make sure the flow of a page is reset by either clearing or containing the floats as necessary. Failing to keep track of floats can cause quite a few headaches, especially as pages begin to have multiple rows of multiple columns.
