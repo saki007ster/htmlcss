@@ -297,3 +297,8 @@ As a result of the right and top box offset properties, the **div** element will
 Because the **div** element is absolutely positioned, it does not sit within the normal flow of the page and will overlap any surrounding elements. Additionally, the original position of the **div** is not preserved, and other elements are able to occupy that space.
 
 Typically, most positioning can be handled without the use of the position property and box offset properties, but in certain cases they can be extremely helpful.
+
+To know more about positioning of blocks you can follow this link [here]( http://alistapart.com/article/css-positioning-101)
+
+
+##Exercise
