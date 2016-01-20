@@ -81,7 +81,7 @@ With two columns we can float one column to the left and another to the right, b
 <footer>...</footer>
 ```
 
-To position these three **section** elements in a three-column row, instead of floating one column to the left and one column to the right, we’ll float all three **section** elements to the left. We’ll also need to adjust the width of the <section> elements to account for the additional columns and to get them to sit one next to the other.
+To position these three **section** elements in a three-column row, instead of floating one column to the left and one column to the right, we’ll float all three **section** elements to the left. We’ll also need to adjust the width of the **section** elements to account for the additional columns and to get them to sit one next to the other.
 
 ```
 section {
@@ -93,10 +93,10 @@ section {
 
 Here we have three columns, all with equal width and margin values and all floated to the left.
 
-Three-column Layout with Floats Demo
 
+### Three-column Layout with Floats Demo
 
-Clearing & Containing Floats
+####Clearing & Containing Floats
 
 The float property was originally designed to allow content to wrap around images. An image could be floated, and all of the content surrounding that image could then naturally flow around it. Although this works great for images, the float property was never actually intended to be used for layout and positioning purposes, and thus it comes with a few pitfalls.
 
@@ -106,14 +106,14 @@ Often margin and padding property values aren’t interpreted correctly, causing
 
 Another pitfall is that sometimes unwanted content begins to wrap around a floated element. Removing an element from the flow of the document allows all the elements around the floated element to wrap and consume any available space around the floated element, which is often undesired.
 
-With our previous two-column example, after we floated the <section> and <aside> elements, and before we set a width property value on either of them, the content within the <footer> element would have wrapped in between the two floated elements above it, filling in any available space. Consequently, the <footer> element would have sat in the gutter between the <section> and <aside> elements, consuming the available space.
+With our previous two-column example, after we floated the **section** and **aside** elements, and before we set a width property value on either of them, the content within the **footer** element would have wrapped in between the two floated elements above it, filling in any available space. Consequently, the **footer** element would have sat in the gutter between the **section** and **aside** elements, consuming the available space.
 
-Layout without Cleared or Contained Floats Demo
 
+#### Layout without Cleared or Contained Floats Demo
 
 To prevent content from wrapping around floated elements, we need to clear, or contain, those floats and return the page to its normal flow. We’ll proceed by looking at how to clear floats, and then we’ll take a look at how to contain floats.
 
-Clearing Floats
+#### Clearing Floats
 
 Clearing floats is accomplished using the clear property, which accepts a few different values: the most commonly used values being left, right, and both.
 
@@ -125,7 +125,7 @@ div {
 
 The left value will clear left floats, while the right value will clear right floats. The both value, however, will clear both left and right floats and is often the most ideal value.
 
-Going back to our previous example, if we use the clear property with the value of both on the <footer> element, we are able to clear the floats. It is important that this clear be applied to an element appearing after the floated elements, not before, to return the page to its normal flow.
+Going back to our previous example, if we use the clear property with the value of both on the **footer** element, we are able to clear the floats. It is important that this clear be applied to an element appearing after the floated elements, not before, to return the page to its normal flow.
 
 ```
 footer {
@@ -133,10 +133,11 @@ footer {
 }
 ```
 
-Layout with Cleared Floats Demo
+
+#### Layout with Cleared Floats Demo
 
 
-Containing Floats
+#### Containing Floats
 
 Rather than clearing floats, another option is to contain the floats. The outcomes of containing floats versus those of clearing them are nearly the same; however, containing floats does help to ensure that all of our styles will be rendered properly.
 
@@ -163,7 +164,8 @@ More specifically, the :before and :after pseudo-elements, as mentioned in the L
 
 It is more code than the clear: both; declaration alone, but it can prove to be quite useful.
 
-Looking at our two-column page layout from before, we could wrap the <section> and <aside> elements with a parent element. That parent element then needs to contain the floats within itself. The code would look like this:
+Looking at our two-column page layout from before, we could wrap the **section** and **aside** elements with a parent element. That parent element then needs to contain the floats within itself. The code would look like this:
+
 
 HTML
 ```
@@ -201,8 +203,7 @@ aside {
 }
 ```
 
-Layout with Contained Floats Demo
-
+### Layout with Contained Floats Demo
 The technique shown here for containing elements is know as a “clearfix” and can often be found in other websites with the class name of clearfix or cf. We’ve chosen to use the class name of group, though, as it is representing a group of elements, and better expresses the content.
 
 As elements are floated, it is important to keep note of how they affect the flow of a page and to make sure the flow of a page is reset by either clearing or containing the floats as necessary. Failing to keep track of floats can cause quite a few headaches, especially as pages begin to have multiple rows of multiple columns.
