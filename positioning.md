@@ -33,7 +33,7 @@ Let’s create a common page layout with a header at the top, two columns in the
 
 
 ###Layout without Floats Demo
-Here the <section> and <aside> elements, as block-level elements, will be stacked on top of one another by default. However, we want these elements to sit side by side. By floating the <section> to the left and the <aside> to the right, we can position them as two columns sitting opposite one another. Our CSS should look like this:
+Here the **section** and **aside** elements, as block-level elements, will be stacked on top of one another by default. However, we want these elements to sit side by side. By floating the **section** to the left and the **aside** to the right, we can position them as two columns sitting opposite one another. Our CSS should look like this:
 
 ```
 section {
