@@ -6,4 +6,5 @@
 * [Know your CSS](know_your_css.md)
 * [The Box Model](the_box_model.md)
 * [Positioning](positioning.md)
+* Web Typography
 
