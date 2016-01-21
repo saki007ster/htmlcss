@@ -374,6 +374,101 @@ h2 a {
 ```
 ![](Screen Shot 2016-01-21 at 10.08.51 AM.png)
 
+### Using Web-Safe Fonts
+By default there are a few fonts that are pre-installed on every computer, tablet, smart-phone, or other web-browsing-capable device. Because they’ve been installed on every device, we can use these fonts freely within our websites, knowing that no matter what device is browsing our site, the font will render properly. These fonts have become known as “web-safe fonts.” There are only a handful of them, and the safest of the web-safe fonts are listed here:
+
+- ArialCourier New, 
+- CourierGaramondGeorgiaLucida Sans, 
+- Lucida Grande, 
+- LucidaPalatino LinotypeTahomaTimes New Roman, 
+- TimesTrebuchetVerdana
+
+### Embedding Web Fonts
+We also have the ability to upload fonts to a server and include them on a website via the CSS @font-face at-rule. This capability has done wonders for online typography. Now, more than ever, typography is coming to life online.
+
+Embedding our own web fonts looks a bit like the following CSS. First, we use the @font-face at-rule to identify our font’s name, via the font-family property, as well as the source of our font (the path to the font file containing our chosen font), via the src property. From there we are able to use this font by including its name within any font-family property value.
+
+```
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("lobster.woff") format("woff");
+}
+body {
+  font-family: "Lobster", "Comic Sans", cursive;
+}
+```
+
+###Text Properties Demo
+
+Having the ability to embed any typeface on a website does not mean we legally have the authority to do so. Typefaces are works of art, and posting them on our server may allow others to easily steal them. The authority to use a typeface depends on the licensing we’ve been warranted.
+
+Fortunately, the value of using new typefaces online has been recognized, and companies have begun developing ways to license and include new fonts on websites. Some of these companies, like Typekit and Fontdeck, work off a subscription model for licensing fonts, while others, like Google Fonts, license the fonts for free. Before uploading any fonts, let’s make sure we have permission to do so.
+
+Including Citations & Quotes
+Writing online sometimes involves citing different sources or quotations. All of the different citation and quotation cases can be covered semantically in HTML using the **cite**, **q**, and **blockquote** elements. Because they are usually distinguished from regular text in appearance, we’ll discuss them here in the typography lesson.
+
+Knowing when to use which element and attribute to properly mark up citations and quotes takes a bit of practice. In general, follow these rules:
+
+**cite**: Used to reference a creative work, author, or resource
+**q**: Used for short, inline quotations
+**blockquote**: Used for longer external quotations
+Citing a Creative Work
+
+The **cite** inline element is used in HTML to specifically cite a creative work; the element must include either the title of the work, the author’s name, or a URL reference to the work. By default, content wrapped within the **cite** element will appear in italics within the browser.
+
+
+###Dialogue & Prose Quotation
+
+Quite often, dialogue or prose is quoted inline, within other text. For this purpose, the <q> (or quote) inline element should be applied. The <q> element semantically indicates quoted dialogue or prose and shouldn’t be used for any other purposes.
+
+By default, the browser will insert the proper quotation marks for us and will even change the quotation marks based on the language identified within the lang global attribute.
+
+Here’s an example:
+
+```
+<p>Steve Jobs once said, <q>One home run is much better than two doubles.</q></p>
+```
+
+### Dialogue & Prose Citation
+
+An optional attribute to include on the <q> element is the cite attribute. The cite attribute acts as a citation reference to the quote in the form of a URL. This attribute doesn’t alter the appearance of the element; it simply adds value for screen readers and other devices. Because the attribute isn’t viewable within the browser, it’s also helpful to provide a hyperlink to this source next to the actual quotation.
+
+Here’s an example:
+
+```
+<p><a href="http://www.businessweek.com/magazine/content/06_06/b3970001.htm">Steve Jobs</a> once said, <q cite="http://www.businessweek.com/magazine/content/06_06/b3970001.htm">One home run is much better than two doubles.</q></p>
+```
+
+Dialogue & Prose Citation Demo
+
+
+### External Quotation
+
+To quote a large block of text that comes from an external source and spans several lines, we’ll use the **blockquote** element. The **blockquote** is a block-level element that may have other block-level elements nested inside it, including headings and paragraphs.
+
+Here’s an example that uses the **blockquote** element:
+
+```
+<blockquote>
+  <p>&#8220;In most people&#8217;s vocabularies, design is a veneer. It&#8217;s interior decorating. It&#8217;s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.&#8221;</p>
+</blockquote>
+```
+
+###External Citation
+
+Longer quotes used within the **blockquote** element will often include a citation. This citation may comprise both the cite attribute and the **cite** element.
+
+The cite attribute can be included on the **blockquote** element—in the same way that it was used on the **q** element earlier—to provide a citation reference to the quote in the form of a URL. The **cite** element then can fall after the actual quote itself to specify the original source of the quote, if relevant.
+
+The HTML here outlines an extended quote from Steve Jobs that originally appeared in Fortune magazine. The quotation is marked up using the **blockquote** element with a cite attribute to specify where the quote originally appeared. In the **blockquote** element, the **cite** element, along with an **a** element, provides an additional citation and reference for the quote that is visible to users.
+
+```
+<blockquote cite="http://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/index.htm">
+  <p>&#8220;In most people&#8217;s vocabularies, design is a veneer. It&#8217;s interior decorating. It&#8217;s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.&#8221;</p>
+  <p><cite>&#8212; Steve Jobs in <a href="http://money.cnn.com/ magazines/fortune/fortune_archive/2000/01/24/272277/index.htm"> Fortune Magazine</a></cite></p>
+</blockquote>
+```
+
 ##Exercise
 
 
