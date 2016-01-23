@@ -7,4 +7,5 @@
 * [The Box Model](the_box_model.md)
 * [Positioning](positioning.md)
 * [Web Typography](web_typography.md)
+* Backgrounds and gradients 
 
