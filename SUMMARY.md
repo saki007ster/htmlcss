@@ -11,4 +11,5 @@
 * [Creating Lists](creating_lists.md)
 * Adding Media
 * Building forms
+* Tables
 
