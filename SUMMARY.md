@@ -8,5 +8,5 @@
 * [Positioning](positioning.md)
 * [Web Typography](web_typography.md)
 * [Backgrounds and gradients](backgrounds_and_gradients.md)
-* Creating Lists
+* [Creating Lists](creating_lists.md)
 
