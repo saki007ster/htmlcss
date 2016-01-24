@@ -11,6 +11,6 @@
 * [Creating Lists](creating_lists.md)
 * [Adding Media](adding_media.md)
 * [Building forms](building_forms.md)
-* Tables
+* [Tables](tables.md)
 * Advance selectors
 
