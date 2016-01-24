@@ -10,7 +10,7 @@
 * [Backgrounds and gradients](backgrounds_and_gradients.md)
 * [Creating Lists](creating_lists.md)
 * [Adding Media](adding_media.md)
-* Building forms
+* [Building forms](building_forms.md)
 * Tables
 * Advance selectors
 
