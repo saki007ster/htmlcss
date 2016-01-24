@@ -9,7 +9,7 @@
 * [Web Typography](web_typography.md)
 * [Backgrounds and gradients](backgrounds_and_gradients.md)
 * [Creating Lists](creating_lists.md)
-* Adding Media
+* [Adding Media](adding_media.md)
 * Building forms
 * Tables
 * Advance selectors
