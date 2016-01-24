@@ -322,6 +322,8 @@ td:first-child {
 }
 ```
 
+![](Screen Shot 2016-01-25 at 12.15.58 AM.png)
+
 Within this code there are a few intricacies worth mentioning. To begin, the <table> element has an explicit border-collapse property set to separate and a border-spacing property set to 0. The reason for this is that the <td> elements include borders, while the <th> elements do not. Without the border-collapse property set to separate the borders of the <td> elements would make the body and foot of the table wider than the head.
 
 Since the border-collapse property is set to separate we need to be careful as to how borders are applied to <td> elements. Here borders are set to the right and bottom of all <td> elements. Then, the very first <td> element within a <tr> element will receive a left border. As all of the <td> elements stack together so do their borders, providing the appearance of a solid border around each element.
@@ -588,3 +590,5 @@ tfoot tr:last-child td:last-child {
   border-bottom-right-radius: 5px;
 }
 ```
+
+![](Screen Shot 2016-01-25 at 12.15.07 AM.png)
