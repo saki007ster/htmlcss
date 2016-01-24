@@ -37,47 +37,53 @@ The **input** element defines an area where you can type or paste information.
 
 ####The type attribute
 
-There are different types of <input> elements. We'll look at them later, but in this case we are using <input type="text"> to specify that we want single line text input fields (the type attribute is mandatory). We have also put "Name:" and "Email:" text next to them, to give visitors an indication of what data we'd like them to enter there.
+There are different types of **input** elements. We'll look at them later, but in this case we are using **input type="text"** to specify that we want single line text input fields (the type attribute is mandatory). We have also put "Name:" and "Email:" text next to them, to give visitors an indication of what data we'd like them to enter there.
 
 ####The name attribute
 
-Every <input> element must also have a name attribute that you, the developer, specify. The only exceptions to this rule are special cases where the value attribute is set to the same value as the type attribute, e.g., type="submit" or type="reset". The name attribute is needed for the database or other data destination to uniquely identify that piece of data.
+Every **input** element must also have a name attribute that you, the developer, specify. The only exceptions to this rule are special cases where the value attribute is set to the same value as the type attribute, e.g., type="submit" or type="reset". The name attribute is needed for the database or other data destination to uniquely identify that piece of data.
 
-When the form is submitted, most scripts use the name attribute to place the form data into a database or into an email that can be read by a person. Thus, if the <input> element is for the visitor's name, the name attribute would be name="name" or name="first-name", etc.
+When the form is submitted, most scripts use the name attribute to place the form data into a database or into an email that can be read by a person. Thus, if the **input** element is for the visitor's name, the name attribute would be name="name" or name="first-name", etc.
 
-Also note that the <input> elements have id attributes whose values match those of the name attributes. This is standard practice, and helps ready the form for processing by JavaScript functions. More about this later.
+Also note that the **input** elements have id attributes whose values match those of the name attributes. This is standard practice, and helps ready the form for processing by JavaScript functions. More about this later.
 
-The value attribute
+####The value attribute
 
-Every <input> element should also have a value attribute. The value of this attribute depends on the element it is used on:
+Every **input** element should also have a value attribute. The value of this attribute depends on the element it is used on:
 
-In the case where the field contents are generic, the value attribute can be set to blank — value="". This tells the processing script to just use whatever the visitor types into the box. If you do enter a value into the value attribute, it will appear in the text input as an initial value that the user can then overwrite.
-In the case of more complex input with a choice of options such as a checkbox or radio button, you can set the initial value to one of the choices. For example, you can set value="yes" to have the initial choice of a yes/no radio button pair set to yes.
-In cases where there is only one value so the user doesn't enter anything, such as submit or hidden, you set the value to equal the final input. For example, you would use value="submit" for a submit button.
+- In the case where the field contents are generic, the value attribute can be set to blank — value="". This tells the processing script to just use whatever the visitor types into the box. If you do enter a value into the value attribute, it will appear in the text input as an initial value that the user can then overwrite.
+- In the case of more complex input with a choice of options such as a checkbox or radio button, you can set the initial value to one of the choices. For example, you can set value="yes" to have the initial choice of a yes/no radio button pair set to yes.
+- In cases where there is only one value so the user doesn't enter anything, such as submit or hidden, you set the value to equal the final input. For example, you would use value="submit" for a submit button.
+
 Let's walk through a more complete example of how the value attribute is used:
 
-To start, consider a blank ("") value attribute, where the user enters generic text.
-The code says: <input type="text" name="first-name" id="first-name" value="" />
-The user inputs: Jennifer
-The value of first-name is sent as Jennifer when the form is submitted.
-Now, consider a predetermined value attribute.
-The code says: <input type="checkbox" name="mailing-list" id="mailing-list" value="no" />
-The user checks the box, as they wish to join the website's mailing list.
-The value of mailing-list is sent as "yes" when the form is submitted.
-the <textarea> element
+- To start, consider a blank ("") value attribute, where the user enters generic text.
+    - The code says: <input type="text" name="first-name" id="first-name" value="" />
+    - The user inputs: Jennifer
+    - The value of first-name is sent as Jennifer when the form is submitted.
+- Now, consider a predetermined value attribute.
+    - The code says: <input type="checkbox" name="mailing-list" id="mailing-list" value="no" />
+    - The user checks the box, as they wish to join the website's mailing list.
+    - The value of mailing-list is sent as "yes" when the form is submitted.
 
-After the two <input> elements comes something a bit different — the <textarea> element. This element provides a multiple line text input area, and you can even define how many lines are available. Note the cols and rows attributes — these are required for every textarea element, and specify how many columns (lines) tall and how many rows (characters) wide to make the text area.
+#### The **textarea** element
 
-<input type="submit">
+After the two **input** elements comes something a bit different — the **textarea** element. This element provides a multiple line text input area, and you can even define how many lines are available. Note the cols and rows attributes — these are required for every **textarea** element, and specify how many columns (lines) tall and how many rows (characters) wide to make the text area.
 
-Last but not least, there is a special <input> element with the attribute value="submit". Instead of rendering a text box for input, the submit input will render a button that, when clicked, submits the form's data to whatever target the form has specified. We'll learn more about this later in the article.
+#### <input type="submit">
 
-Step two: Adding structure and behaviour
+Last but not least, there is a special **input** element with the attribute **value="submit"**. Instead of rendering a text box for input, the submit input will render a button that, when clicked, submits the form's data to whatever target the form has specified. We'll learn more about this later in the article.
+
+
+
+
+###Step two: Adding structure and behaviour
 
 When you run that example, fill in the form, and click Submit, it doesn't do anything! Why not? And why does it look so bad, all mashed up on one line? The answer is that we haven't structured it yet, or defined a place for the collected data to be submitted.
 
 Let's go back to the drawing board, with a new and improved form:
 
+```
 <form id="contact-form" action="script.php" method="post">
     <input type="hidden" name="redirect" value="http://www.opera.com" />
     <ul>
@@ -99,6 +105,8 @@ Let's go back to the drawing board, with a new and improved form:
         </li>
     </ul>
 </form>
+```
+
 This form looks like this when rendered in a browser:
 
 the second form example
