@@ -44,4 +44,60 @@ The **img** element is by default an inline-level element. Adding an image witho
 ```
 <p>Gatsby is a black, brown, and white hound mix puppy who loves howling at fire trucks and collecting belly rubs. <img src="dog.jpg" alt="A black, brown, and white dog wearing a kerchief"> Although he spends most of his time sleeping he is also quick to chase any birds who enter his vision.</p>
 ```
+![](Screen Shot 2016-01-24 at 5.50.43 PM.png)
 
+Leaving images untouched in their default positioning isn’t too common. More often than not, images are displayed as block-level elements or are floated flush to one side.
+
+###Block Positioning Images
+
+Adding the display property to an image and setting its value to block forces the image to be a block-level element. This makes the image appear on its own line, allowing the surrounding content to be positioned above and below the image.
+
+```
+img {
+  display: block;
+}
+```
+
+### Positioning Images Flush Left or Right
+
+Sometimes displaying an image as inline or block, or perhaps even inline-block, isn’t ideal. We may want the image to appear on the left or right side of its containing element, while all of the other content wraps around the image as necessary. To do this, we use the float property with a value of either left or right.
+
+Remembering back to Lesson 5, “Positioning,” we recall that the float property was originally intended to position images to the left or right of a containing element. Now we’ll use it for that original purpose.
+
+Floating an image is a start; however, all other content will align directly against it. To provide spacing around an image, we’ll use the margin property. Additionally, we can use the padding, border, and background properties to build a frame for the image, if desired.
+
+```
+img {
+  background: #eaeaed;
+  border: 1px solid #9799a7;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+```
+
+### Adding Audio
+HTML5 provides a quick and easy way to add audio files to a website by way of the <audio> element. As with the <img> element, the <audio> element accepts a source URL specified by the src attribute. Unlike the <img> element, though, the <audio> element requires both opening and closing tags, which we’ll discuss soon.
+
+```
+<audio src="jazz.ogg"></audio>
+```
+
+
+###Audio Attributes
+
+Several other attributes may accompany the src attribute on the <audio> element; the most popular include autoplay, controls, loop, and preload.
+
+The autoplay, controls, and loop attributes are all Boolean attributes. As Boolean attributes, they don’t require a stated value. Instead, when each is present on the <audio> element its value will be set to true, and the <audio> element will behave accordingly.
+
+By default, the <audio> element isn’t displayed on a page. If the autoplay Boolean attribute is present on the <audio> element, nothing will appear on the page, but the audio file will automatically play upon loading.
+
+```
+<audio src="jazz.ogg" autoplay></audio>
+```
+
+To display the <audio> element on a page, the controls Boolean attribute is necessary. When it’s applied to the <audio> element, the controls Boolean attribute will display a browser’s default audio controls, including play and pause, seek, and volume controls.
+
+```
+<audio src="jazz.ogg" controls></audio>
+```
