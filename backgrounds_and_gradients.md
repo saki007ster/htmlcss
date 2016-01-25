@@ -317,3 +317,18 @@ We first discussed these keyword values when we covered the box-sizing property 
 - [CSS3 Radial Gradients](http://dev.opera.com/articles/css3-radial-gradients/) via Dev.Opera 
 - [CSSmatic Gradient Generator](http://www.cssmatic.com/gradient-generator) 
 - [CSS3 Files Background](http://css3files.com/background/)
+
+
+## Exercise
+
+Following the exercise in lesson 3 you need to apply the backgrounds as per the designs. You can download the images from the links given bellow. Download the images from the links and place it in the folder inside your project folder named images and link them to the page using css.
+
+- http://www.csszengarden.com/214/bamboo.png
+- http://www.csszengarden.com/214/contours-opaque.png
+- http://www.csszengarden.com/214/contours@2x.png
+- http://www.csszengarden.com/214/enso.svg
+- http://www.csszengarden.com/214/gridlines-opaque.png
+- http://www.csszengarden.com/214/gridlines.png
+- http://www.csszengarden.com/214/huntington.jpg
+- http://www.csszengarden.com/214/koi.jpg
+- http://www.csszengarden.com/214/noise.png
