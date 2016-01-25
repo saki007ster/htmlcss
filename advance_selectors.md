@@ -7,18 +7,15 @@ The best way to avoid these plagues spreading in your markup and keep it clean a
 ###Attribute selectors Link
 Attribute selectors let you target an element based on its attributes. You can specify the element’s attribute only, so all the elements that have that attribute — whatever the value — within the HTML will be targeted, or be more specific and target elements that have particular values on their attributes — and this is where attribute selectors show their power.
 There are 6 different types of attribute selectors:
--   [att=value]- The attribute has to have the exact value specified.
+-   [att=value] - The attribute has to have the exact value specified.
 -   [att~=value] - The attribute’s value needs to be a whitespace separated list of words (for example, class=”title featured home”), and one of the words is exactly the specified value.
-- [att|=value]
-The attribute’s value is exactly “value” or starts with the word “value” and is immediately followed by “-“, so it would be “value-“.
-- [att^=value]
-The attribute’s value starts with the specified value.
-- [att$=value]
-The attribute’s value ends with the specified value.
-- [att*=value]
-The attribute’s value contains the specified value.
+- [att|=value] - The attribute’s value is exactly “value” or starts with the word “value” and is immediately followed by “-“, so it would be “value-“.
+- [att^=value] - The attribute’s value starts with the specified value.
+- [att$=value] - The attribute’s value ends with the specified value.
+- [att*=value] - The attribute’s value contains the specified value.
 
 For example, if you want to change the background color of all the div elements that are posts on your blog, you can use the an attribute selector that targets every div whose class attribute starts with “post-“:
+
 ```
 div[class*="post"] {
   background-color: #333;
