@@ -12,5 +12,5 @@
 * [Adding Media](adding_media.md)
 * [Building forms](building_forms.md)
 * [Tables](tables.md)
-* Advance selectors
+* [Advance selectors](advance_selectors.md)
 
