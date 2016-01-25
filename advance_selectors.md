@@ -538,3 +538,24 @@ If you’re a bit more adventurous, or if you’re not afraid of letting go of t
 - 
 - [10 Useful CSS Properties Not Supported By Internet Explorer](http://www.impressivewebs.com/10-useful-css-properties-not-supported-by-internet-explorer/)
 - [Styling a Poem with Advanced CSS Selectors](http://webdesignernotebook.com/css/styling-a-poem-with-advanced-css-selectors/)
+
+
+##Exercise
+
+You have the following layout
+
+```
+<div id="chess">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+```
+
+I want to you to make a chess board using only css and without changing the above html?
+
