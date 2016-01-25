@@ -303,4 +303,6 @@ To know more about positioning of blocks you can follow this link [here]( http:/
 
 ##Exercise
 
-Complete this exercise on codeacademy  - https://www.codecademy.com/courses/intro-to-css-positioning/0/1
+- Complete this exercise on codeacademy  - https://www.codecademy.com/courses/intro-to-css-positioning/0/1
+
+- Also fix the position related issues on the exercise given in lesson 3. 
