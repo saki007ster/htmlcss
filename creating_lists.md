@@ -268,14 +268,6 @@ Nested lists are quite useful, and often form the basis for navigation menus, as
 Theoretically you can nest lists to any level you like, although in practice it can become confusing to nest lists too deeply. For very large lists, you may be better off splitting the content up into several lists with headings instead, or even splitting it up into separate pages. A good rule of thumb is, don't nest lists deeper than three levels.
 
 
-##Exercise questions
-
-1. What are the three types of HTML list?
-2. When would you use each type of list? How would you choose between them?
-3. How do you nest lists?
-4. Why should you use CSS rather than HTML to style your lists?
-
-
 # Styling HTML Lists
 
 Many web page elements can be forgiving in terms of design — if they aren't "just right" it doesn't matter too much. With lists  it's a different story; if you don't get them right, you can cause some serious problems for people trying to use your website.
