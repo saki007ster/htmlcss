@@ -520,3 +520,24 @@ Fun fact: the** ::first-line** and **::first-letter** pseudo-elements will match
 Notes on browser support
 
 These pseudo-elements are supported by IE8 (not IE7 or 6), if the single colon format is used (for example, :first-letter, not ::first-letter). All the other major browsers support these selectors.
+
+
+###Conclusion
+Enough with the boring talk, now it’s time for you to grab the information on this post and go try it for yourself: start by creating an experimental page and test all of these selectors, come back here when in doubt and make sure to always refer to the W3C specs, but don’t just sit there thinking that because these selectors aren’t yet widely supported you might as well ignore them.
+
+If you’re a bit more adventurous, or if you’re not afraid of letting go of the past filled with useless and non-semantic classes and ids, why not sneak one or two of these powerful CSS selectors into your next project? We promise you’ll never look back.
+
+**References Link**
+- [CSS 2 Selectors — W3C](http://www.w3.org/TR/CSS2/selector.html)
+- [CSS 3 Selectors Level 3 — W3C](http://www.w3.org/TR/css3-selectors/)
+- [Comparison of layout engines (Cascading Style Sheets) — Wikipedia](http://en.wikipedia.org/wiki/Comparison_of_layout_engines_%28Cascading_Style_Sheets%29)
+- [Generated content, automatic numbering, and lists — W3C](http://www.w3.org/TR/CSS2/generate.html)
+
+**Further Resources Link**
+- [Keeping Your Elements’ Kids in Line with Offspring — A List Apart](http://www.alistapart.com/articles/keepelementskidsinlinewithoffspring/)
+- [Selectutorial – CSS selectors](http://css.maxdesign.com.au/selectutorial/index.htm)
+- [CSS 3 selectors explained](http://www.456bereastreet.com/archive/200601/css_3_selectors_explained/)
+- [CSS selectors and pseudo selectors browser compatibility](http://kimblim.dk/css-tests/selectors/)
+- 
+- [10 Useful CSS Properties Not Supported By Internet Explorer](http://www.impressivewebs.com/10-useful-css-properties-not-supported-by-internet-explorer/)
+- [Styling a Poem with Advanced CSS Selectors](http://webdesignernotebook.com/css/styling-a-poem-with-advanced-css-selectors/)
