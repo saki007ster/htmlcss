@@ -109,7 +109,7 @@ Let's go back to the drawing board, with a new and improved form:
 
 This form looks like this when rendered in a browser:
 
-the second form example
+![the second form example](https://static.webplatform.org/w/public/8/8c/Form2.png)
 
 Figure 2: The second form example — looking better.
 
@@ -117,31 +117,32 @@ You can also put this example code into an HTML page and play with it, but if yo
 
 Here we have made a few additions to the basic, simple form. Let's break it down:
 
-Giving the form an id
+####Giving the form an id
 
 We added an id attribute to provide a unique identifier for the form (contact-form) so that it can be more easily styled using CSS or manipulated using JavaScript. All ids must be unique within a page.
 
-The method attribute: telling the data how to travel
+####The method attribute: telling the data how to travel
 
 Lights, camera, action! When you pressed the submit button in the first form and it did nothing, that was because it had no action or method. The method attribute specifies how the data is sent to the script that will process it. The two most common methods are "GET" and "POST".
 
-The "GET" method sends the data in the page's URL. In your browser's address bar you will sometimes see URLs like http://www.example.com/page.php?data1=value1&data2=value2...; these are bits of data being transported using the "GET" method. Unless you have a specific reason to use "GET", it is probably best to avoid it if you are trying to send secure information, because anyone can see the information as it is transmitted via the URL.
-The "POST" method sends the data, via the script that powers the form, either to an email that is sent to the site's administrator or to a database to be stored and accessed later. "POST" is the more secure and usually the better option; see this W3C article for more information.
+- The "GET" method sends the data in the page's URL. In your browser's address bar you will sometimes see URLs like http://www.example.com/page.php?data1=value1&data2=value2...; these are bits of data being transported using the "GET" method. Unless you have a specific reason to use "GET", it is probably best to avoid it if you are trying to send secure information, because anyone can see the information as it is transmitted via the URL.
+- The "POST" method sends the data, via the script that powers the form, either to an email that is sent to the site's administrator or to a database to be stored and accessed later. "POST" is the more secure and usually the better option; see this W3C article for more information.
+
 If you are concerned about the security of the data in the form, for example if you are submitting a credit card number to a shopping site, then you should use https with a secure socket layer (SSL). Basically, this means that data will be sent over the secure https protocol instead of the insecure http protocol. Have a look at the URLs next time you are paying for something on a shopping site, or using online banking — you'll probably see https:// in your address bar, not http://. Although an https connection is a bit slower to transmit than http, the data is encrypted, so anyone hacking into the data connection can't make hijack it while it is in transit. Talk to your web host for information on how they can provide you with https and SSL to use with your forms.
 
-The action attribute: telling the data where to go
+####The action attribute: telling the data where to go
 
-The action attribute specifies what script the form data should be sent to for processing. Many web hosts have a generic send mail script or other form scripts available for use (see your host's documentation for information) that they have customized to their servers. On the other hand, you could use a server-side script that you or someone else has created to power your form. Most of the time, web developers use languages such as PHP, Perl, or Ruby to create a script that will process the form — you could, for example, send an email containing the form information, or input the form information into a database to be stored for later use. It is outside of the scope of this article to teach you how to write server-side code — please inquire with your host to find out what they offer, or find a nice programmer to befriend.
+The **action** attribute specifies what script the form data should be sent to for processing. Many web hosts have a generic send mail script or other form scripts available for use (see your host's documentation for information) that they have customized to their servers. On the other hand, you could use a server-side script that you or someone else has created to power your form. Most of the time, web developers use languages such as PHP, Perl, or Ruby to create a script that will process the form — you could, for example, send an email containing the form information, or input the form information into a database to be stored for later use. It is outside of the scope of this article to teach you how to write server-side code — please inquire with your host to find out what they offer, or find a nice programmer to befriend.
 
-Hidden form inputs
+#### Hidden form inputs
 
 The second line that's been added to our Step Two form is the "hidden" input field — this is a redirect. Under the goal of separating markup structure from presentation and behaviour, it is ideal to use the script that will power the form to also redirect the user when the form is submitted. You don't want your users to be left sitting there looking at the form page, wondering what to do next after they've submitted the form; we're sure you'll agree that it is a much better user experience to instead redirect your users after a successful form submission to a thank you page featuring "what to do next" links. This example specifies that after the form is submitted, the user will be redirected to the Opera homepage.
 
-Structuring with an unordered list
+####Structuring with an unordered list
 
-To improve the look of the form, we have put all the form elements into an unordered list so that we can use CSS to hook into the HTML structure and make the form look better, by lining it up and giving it some polish. Some developers would argue against using an unordered list to mark up a form, and would suggest using a set of <div> elements instead. To be perfectly honest, either way is fine, so pick the one that suits you best. Whatever layout method you use, be sure to style it appropriately with CSS so it doesn't look awkward and clunky.
+To improve the look of the form, we have put all the form elements into an unordered list so that we can use CSS to hook into the HTML structure and make the form look better, by lining it up and giving it some polish. Some developers would argue against using an unordered list to mark up a form, and would suggest using a set of **div** elements instead. To be perfectly honest, either way is fine, so pick the one that suits you best. Whatever layout method you use, be sure to style it appropriately with CSS so it doesn't look awkward and clunky.
 
-Labels for accessibility
+#### Labels for accessibility
 
 Last but not least in Step Two, we've labeled the form elements. It is best to give all the form elements corresponding <label> elements. These labels are tied to their respective form elements by giving the <input> and <textarea> elements ids that have the same value as the labels' for attributes, or by nesting the input control inside the label element itself. This is great because it not only gives a visual indicator of the purpose of each form field on the screen, but it also gives the form fields more meaning semantically. In addition, a visually impaired person using the page with a screen reader can now tell which label goes with which form element and have more of a clue what data to fill into what input. The ids can also be used for targeting individual form fields with CSS styles.
 
@@ -152,7 +153,7 @@ The second form looks a bit better, but isn't quite ready for publishing. Time t
 Step three: Adding some more complex form elements
 
 The next version of the form code is:
-
+```
 <form id="contact-form" action="script.php" method="post">
  
 <ul>
@@ -199,18 +200,22 @@ The next version of the form code is:
 <li><input type="submit" value="submit" /></li>
  
 </form>
+```
+
 When rendered in a browser, that form looks like this:
 
-the third form example
+![the third form example](https://static.webplatform.org/w/public/8/8d/Form3.png)
+
 
 Figure 3: Some new, more complex form elements!
 
 What have we added here? Let's have a look.
 
-Checkboxes: providing multiple yes/no choices
+####Checkboxes: providing multiple yes/no choices
 
 The first thing we added is a set of checkboxes:
 
+```
 <li>Please check all the emotions that apply to you:
   <ul>
     <li><label for="angry">Angry</label> <input type="checkbox" name="angry" id="angry" value="angry" checked="checked"></li>
@@ -219,12 +224,15 @@ The first thing we added is a set of checkboxes:
     <li><label for="ambivalent">Ambivalent</label> <input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent"></li>
   </ul>
 </li>
+```
+
 There is nothing special about these; each element creates a checkbox that can be checked on and off by the site visitor. They are identified by IDs, and their data is identified by their name attributes. When the form is submitted, any data items not checked are submitted as "off" or "no".
 
-Radio buttons: a multiple choice option
+####Radio buttons: a multiple choice option
 
 Next, we have a set of radio buttons:
 
+```
 <li>How satisfied were you with our service?
   <ul>
     <li><label for="vsat">Very satisfied</label> <input type="radio" name="satisfaction" id="vsat" value="vsat" checked="checked"></li>
@@ -234,21 +242,26 @@ Next, we have a set of radio buttons:
     <li><label for="vdisat">Very dissatisfied</label> <input type="radio" name="satisfaction" id="vdisat" value="vdisat"></li>
   </ul>
 </li>
+```
+
 The only thing here that is different from the checkboxes (apart from the type attribute value of course) is the name values — notice that they are all the same. This is because whereas with checkboxes you are dealing with separate items of data with on/off values, while with sets of radio buttons you are dealing with a single item of data that cane take one of several values. Having the name attributes all set to the same value makes these radio buttons part of the same set, and you can only select one of them at once.
 
-The checked attribute
+####The checked attribute
 
 Note the checked attribute on the above two bits of code, which makes the element selected by default when the page loads.
 
-Uploading a file
-
+####Uploading a file
+```
 <li><label for="photo">Bio photo:</label> <input type="file" name="photo" id="photo" value="" /></li>
+```
+
 This line of code creates a file uploader, used for uploading photos or other objects to be submitted with the form. Clicking the input field activates your operating system's "File" or "Open" dialog and allows you to choose a file to be uploaded when the form is submitted.
 
-Select and option: creating a multi-line dropdown menu
+####Select and option: creating a multi-line dropdown menu
 
 The last new bit of code looks like this:
 
+```
 <li><label for="location">Location visited:</label>
 <select name="location" id="location">
   <option value="">Select location</option>
@@ -259,12 +272,15 @@ The last new bit of code looks like this:
   <option value="blackpool">Blackpool</option>
   <option value="bognor">Bognor Regis</option>
 </select></li>
-The <select> element is quite different from the others we've seen so far: it creates a single line form control that, when activated, drops down to reveal multiple options, as defined in the <option> elements. The value attribute contains the actual data that is submitted for the selected option when you submit the form, and the text content inside the elements are the values the user sees.
+```
 
-Step four: further structuring with fieldsets and legends
+The **select** element is quite different from the others we've seen so far: it creates a single line form control that, when activated, drops down to reveal multiple options, as defined in the **option** elements. The value attribute contains the actual data that is submitted for the selected option when you submit the form, and the text content inside the elements are the values the user sees.
+
+###Step four: further structuring with fieldsets and legends
 
 The final form example is identical to the last one, except that we have wrapped the different major parts of the form in <fieldset> elements, and given each one its own <legend> element. For example:
 
+```
 <fieldset>
  
 <legend>Login details</legend>
@@ -275,26 +291,32 @@ The final form example is identical to the last one, except that we have wrapped
   ...
  
 </fieldset>
+```
+
 When rendered in a browser, these look like this:
 
-the fourth and final form example
+![the fourth and final form example](https://static.webplatform.org/w/public/4/45/Form4.png)
 
 Figure 4: More structuring with fieldset and legend.
 
-Explaining fieldset and legend
 
-<fieldset> and <legend> are not mandatory, but they are very useful for more complex forms and for presentation.
+####Explaining fieldset and legend
 
-The <fieldset> element allows you to organize the form into semantic modules. In a more complex form, you could use different <fieldset>s to contain address information, billing information, customer preference information, and so on. The <legend> element allows you to add a label to each <fieldset> section.
+**fieldset** and **legend** are not mandatory, but they are very useful for more complex forms and for presentation.
+
+The **fieldset** element allows you to organize the form into semantic modules. In a more complex form, you could use different **fieldset**s to contain address information, billing information, customer preference information, and so on. The **legend** element allows you to add a label to each **fieldset** section.
 
 A little bit of style...
 
 We've also applied a bit of CSS to this form, to style the structural markup. This is applied to the third form example using an external stylesheet. The two most important tasks we want the CSS to do are to add margins to line up the labels and input boxes, and to get rid of the unordered list's bullets. Here is the CSS that resides in the external stylesheet:
 
+```
 #contact-form fieldset {width:40%;}
 #contact-form li {margin:10px; list-style: none;}
 #contact-form input  {margin-left:45px; text-align: left;}
 #contact-form textarea {margin-left:10px; text-align: left;}
-What does it do? The first line styles the fieldset border to not take up the whole page; you could also omit the border completely using {border: none;}. The second line puts a margin of 10 pixels on the <li> elements to put a little visual room between each list item, and gets rid of the bullets. The third and fourth lines set a left margin on the <input> and <textarea> elements so that they don't crowd the labels and line up better.
+```
+
+What does it do? The first line styles the fieldset border to not take up the whole page; you could also omit the border completely using {border: none;}. The second line puts a margin of 10 pixels on the **li** elements to put a little visual room between each list item, and gets rid of the bullets. The third and fourth lines set a left margin on the **input** and **textarea** elements so that they don't crowd the labels and line up better.
 
 You can see that this little bit of CSS makes our form look better, but you could improve it even more. For more information on styling forms, see Nick Rigby's article, Prettier Accessible Forms.
