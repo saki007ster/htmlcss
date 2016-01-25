@@ -407,4 +407,9 @@ Fortunately, the value of using new typefaces online has been recognized, and co
 
 ##Exercise
 
+Following the exercise in lesson 3 you need to apply the same fonts as per the design given. You can download the font files from the link mentioned here.
 
+- http://fonts.gstatic.com/s/juliussansone/v5/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2
+- http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK8j0T1k_tV7QYhgnOhA2764.woff2
+- http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2
+- http://www.csszengarden.com/214/verdemoderna.woff
