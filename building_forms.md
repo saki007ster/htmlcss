@@ -306,7 +306,7 @@ Figure 4: More structuring with fieldset and legend.
 
 The **fieldset** element allows you to organize the form into semantic modules. In a more complex form, you could use different **fieldset**s to contain address information, billing information, customer preference information, and so on. The **legend** element allows you to add a label to each **fieldset** section.
 
-A little bit of style...
+**A little bit of style...**
 
 We've also applied a bit of CSS to this form, to style the structural markup. This is applied to the third form example using an external stylesheet. The two most important tasks we want the CSS to do are to add margins to line up the labels and input boxes, and to get rid of the unordered list's bullets. Here is the CSS that resides in the external stylesheet:
 
