@@ -220,3 +220,11 @@ Additionally, the **figcaption** element may replace an **img** element’s alt 
 - [The figure & figcaption elements](http://html5doctor.com/the-figure-figcaption-elements/) via HTML5 Doctor
 
 
+##Exercise
+
+- Why is it important to add good text to an image in an alt attribute? Are there any situations in which you don't need to?
+- If you have an image that is 1280x786 pixels large and you want to display it as a 40x30 pixel thumbnail, can you do that in HTML and is it wise to do so?
+- What does the longdesc attribute do, and how do browsers show it?
+- What do the valign and the align attributes do and why weren’t they covered here?
+- Where are CSS background images positioned inside an element by default, and how do they get repeated by default?
+- Embed a video in your webpage which starts autplaying as it loads and does not wait for the user action.
