@@ -320,3 +320,11 @@ We've also applied a bit of CSS to this form, to style the structural markup. Th
 What does it do? The first line styles the fieldset border to not take up the whole page; you could also omit the border completely using {border: none;}. The second line puts a margin of 10 pixels on the **li** elements to put a little visual room between each list item, and gets rid of the bullets. The third and fourth lines set a left margin on the **input** and **textarea** elements so that they don't crowd the labels and line up better.
 
 You can see that this little bit of CSS makes our form look better, but you could improve it even more. For more information on styling forms, see Nick Rigby's article, Prettier Accessible Forms.
+
+## Exercise
+Code your own contact form.
+
+- Create a simple contact form that asks the user for their name, email address, and a comment.
+- Add a checkbox asking if the reader would like to join your mailing list.
+- Use some CSS to style your form: set a width to the form, align the labels to the left, put a background colour on to your page, etc.
+- Find out what the <optgroup> element does, and use it in your form.
