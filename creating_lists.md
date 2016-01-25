@@ -628,3 +628,9 @@ If you are required to produce this design for older browsers that don't support
 ### Lists conclusion
 
 We've now covered a core set of styling choices and methods for lists. You can build on these examples and combine them to create a large number of designs. Because lists are very commonly combined with links, let's look at them next.
+
+## Exercise questions
+ - What are the three types of HTML list?
+ - When would you use each type of list? How would you choose between them?
+ - How do you nest lists?
+ - Why should you use CSS rather than HTML to style your lists?
