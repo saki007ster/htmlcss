@@ -592,3 +592,7 @@ tfoot tr:last-child td:last-child {
 ```
 
 ![](Screen Shot 2016-01-25 at 12.15.07 AM.png)
+
+## Exercise
+Create the table as per the image given below, both html and css.
+![](https://static.webplatform.org/w/public/1/14/table300.png)
