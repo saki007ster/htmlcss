@@ -327,4 +327,3 @@ Code your own contact form.
 - Create a simple contact form that asks the user for their name, email address, and a comment.
 - Add a checkbox asking if the reader would like to join your mailing list.
 - Use some CSS to style your form: set a width to the form, align the labels to the left, put a background colour on to your page, etc.
-- Find out what the <optgroup> element does, and use it in your form.
